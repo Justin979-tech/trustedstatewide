@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: justinolson/trustedstatewide
+  name: git-gateway
   branch: main
 
 media_folder: "assets/uploads"
@@ -11,7 +10,7 @@ collections:
     label: "Blog"
     folder: "blog"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
