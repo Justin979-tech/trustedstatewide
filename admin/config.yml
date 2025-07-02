@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: yourusername/trustedstatewide
+  repo: justinolson/trustedstatewide
   branch: main
 
 media_folder: "assets/uploads"
