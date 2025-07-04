@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-  </head>
-  <body>
+
     <!-- Netlify Identity Widget -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
 
     <!-- Initialize Netlify Identity -->
     <script>
@@ -21,7 +22,18 @@
       }
     </script>
 
-    <!-- Netlify CMS -->
+    <!-- Netlify CMS manual init -->
+    <script>
+      window.CMS_MANUAL_INIT = true;
+    </script>
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      CMS.init({
+        config: '/config.yml'
+      });
+    </script>
+
+  </body>
+</html>
   </body>
 </html>
