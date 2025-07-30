@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: Justin979-tech/trustedstatewide
+  name: git-gateway
   branch: main
 
 media_folder: "assets/uploads"
