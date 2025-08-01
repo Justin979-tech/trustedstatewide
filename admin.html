@@ -3,29 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <title>Trusted Statewide CMS Admin</title>
-
-    <!-- Netlify Identity Widget -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <!-- Initialize Netlify Identity -->
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {
           if (!user) {
             window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin.html";
+              document.location.href = "/admin/";
             });
           }
         });
       }
     </script>
 
-    <!-- Netlify CMS manual init -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
       CMS.init({
-        config: '/config.yml' // path to your config.yml
+        config: 'config.yml'
       });
     </script>
   </body>
