@@ -1,0 +1,17 @@
+[[redirects]]
+  from = "/.netlify/identity/confirm"
+  to = "/admin/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/.netlify/identity/verify"
+  to = "/admin/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/.netlify/identity/recover"
+  to = "/admin/"
+  status = 302
+  force = true
