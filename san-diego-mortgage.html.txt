@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>San Diego Mortgage Loans | Trusted Statewide</title>
+  <meta name="description" content="Work with Justin Olson, California’s trusted mortgage loan officer, for San Diego home loans, jumbo mortgages, refinances, and reverse mortgages.">
+  <meta name="keywords" content="San Diego mortgage, San Diego home loan, best mortgage San Diego, San Diego refinance, jumbo loan San Diego, reverse mortgage San Diego, Justin Olson">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>San Diego Mortgage Loans</h1>
+    <p>Trusted Statewide | Justin Olson, Mortgage Loan Officer | NMLS #279520 | CA DRE #01990419</p>
+    <p>Call <a href="tel:6199036029">619-903-6029</a> | Email <a href="mailto:jolson@C2Financial.com">jolson@C2Financial.com</a></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Your San Diego Mortgage Expert</h2>
+      <p>Buying or refinancing a home in San Diego? Work directly with <strong>Justin Olson</strong>, one of California’s most trusted mortgage loan officers. Whether you’re purchasing your first home, upgrading, or refinancing, I’ll guide you through a seamless process with competitive options and personalized service.</p>
+    </section>
+
+    <section>
+      <h2>Loan Programs Offered in San Diego</h2>
+      <ul>
+        <li><strong>Conventional Home Loans</strong> – Great for qualified buyers with strong credit.</li>
+        <li><strong>FHA & VA Loans</strong> – Helping more borrowers achieve homeownership.</li>
+        <li><strong>Jumbo Mortgages</strong> – Flexible financing for San Diego’s higher-priced homes.</li>
+        <li><strong>Refinancing</strong> – Lower your monthly payments or access home equity.</li>
+        <li><strong>Reverse Mortgages</strong> – A smart solution for homeowners 62+ in San Diego.</li>
+        <li><strong>Non-QM & DSCR Loans</strong> – Financing for self-employed borrowers and investors.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why San Diego Homebuyers Choose Trusted Statewide</h2>
+      <p>With years of experience serving California homeowners, I know San Diego’s housing market and how to get loans closed quickly. From Mission Valley to La Jolla, Chula Vista to Carlsbad, I help borrowers secure the right financing for their dream homes.</p>
+    </section>
+
+    <section>
+      <h2>Apply Online Today</h2>
+      <p>Start your San Diego mortgage application in minutes. Upload documents securely and get a fast pre-approval.</p>
+      <p><a href="https://trustedstatewide.netlify.app/#form" class="button">Start My Application</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trusted Statewide | Justin Olson | NMLS #279520 | CA DRE #01990419</p>
+  </footer>
+</body>
+</html>
