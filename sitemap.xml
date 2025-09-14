@@ -1,2 +1,70 @@
-<?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://trustedstatewide.netlify.app</loc><lastmod>2025-08-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url><url><loc>https://trustedstatewide.netlify.app/admin</loc><lastmod>2025-08-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://trustedstatewide.netlify.app/</loc>
+    <lastmod>2025-09-14</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Loan Program Pages -->
+  <url>
+    <loc>https://trustedstatewide.netlify.app/va-loan.html</loc>
+    <lastmod>2025-09-14</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://trustedstatewide.netlify.app/fha-loan.html</loc>
+    <lastmod>2025-09-14</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://trustedstatewide.netlify.app/conventional-loans.html</loc>
+    <lastmod>2025-09-14</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://trustedstatewide.netlify.app/jumbo-mortgage.html</loc>
+    <lastmod>2025-09-14</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://trustedstatewide.netlify.app/non-qm-mortgage.html</loc>
+    <lastmod>2025-09-14</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://trustedstatewide.netlify.app/first-time-home-buyer.html</loc>
+    <lastmod>2025-09-14</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://trustedstatewide.netlify.app/reverse-mortgage.html</loc>
+    <lastmod>2025-09-14</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- City Pages -->
+  <url>
+    <loc>https://trustedstatewide.netlify.app/san-diego-mortgage.html</loc>
+    <lastmod>2025-09-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trustedstatewide.netlify.app/los-angeles-mortgage.html</loc>
+    <lastmod>2025-09-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trustedstatewide.netlify.app/san-francisco-mortgage.html</loc>
+    <lastmod>2025-09-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trustedstatewide.netlify.app/sacramento-mortgage.html</loc>
+    <lastmod>2025-09-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
