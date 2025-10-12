@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>California Mortgage Calculator | Trusted Statewide</title>
+  <meta name="description" content="Use Trusted Statewide’s easy California mortgage calculator to estimate your monthly payments. Get quick results and apply online with Justin Olson, the best mortgage loan officer in California.">
+  <meta name="keywords" content="California mortgage calculator, home loan calculator, Trusted Statewide, Justin Olson mortgage, mortgage payment estimator, refinance calculator, jumbo mortgage calculator, FHA VA loan calculator">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 2rem 1rem;
+    }
+    main {
+      padding: 2rem 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    input {
+      width: 90%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #0066cc;
+      color: white;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    button:hover {
+      background-color: #004999;
+    }
+    #result {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>California Mortgage Calculator</h1>
+    <p>Trusted Statewide | Justin Olson, Mortgage Loan Officer | NMLS #279520 | CA DRE #01990419</p>
+  </header>
+
+  <main>
+    <h2>Estimate Your Monthly Payment</h2>
+    <p>Enter your loan details below to calculate your estimated monthly mortgage payment.</p>
+
+    <form id="calculator">
+      <input type="number" id="loanAmount" placeholder="Loan Amount ($)" required><br>
+      <input type="number" id="interestRate" step="0.01" placeholder="Interest Rate (%)" required><br>
+      <input type="number" id="loanTerm" placeholder="Loan Term (years)" required><br>
+      <button type="button" onclick="calculatePayment()">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+
+    <p style="margin-top:2rem;">
+      Ready to get pre-approved?  
+      <a href="https://trustedstatewide.netlify.app/apply.html" style="color:#0066cc; font-weight:bold;">Start your application here</a>.
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Trusted Statewide | Justin Olson | NMLS #279520 | CA DRE #01990419</p>
+  </footer>
+
+  <script>
+    function calculatePayment() {
+      const loanAmount = parseFloat(document.getElementById('loanAmount').value);
+      const interestRate = parseFloat(document.getElementById('interestRate').value) / 100 / 12;
+      const loanTerm = parseFloat(document.getElementById('loanTerm').value) * 12;
+
+      if (isNaN(loanAmount) || isNaN(interestRate) || isNaN(loanTerm)) {
+        document.getElementById('result').textContent = "Please fill in all fields correctly.";
+        return;
+      }
+
+      const monthlyPayment = (loanAmount * interestRate) / (1 - Math.pow(1 + interestRate, -loanTerm));
+      document.getElementById('result').textContent = "Estimated Monthly Payment: $" + monthlyPayment.toFixed(2);
+    }
+  </script>
+</body>
+</html>
