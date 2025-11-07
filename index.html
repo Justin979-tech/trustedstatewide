@@ -423,8 +423,36 @@
     Safe. Secure. No obligation. Your quote is reviewed by Justin Olson, California’s trusted mortgage loan officer (NMLS #279520).
   </p>
 </section>
+    <!-- Mortgage Calculator -->
+<section id="calculator" style="background:#f8f9fc;padding:2rem;border-radius:10px;margin:2rem auto;max-width:700px;">
+  <h2 style="color:#004aad;text-align:center;">Quick Mortgage Calculator</h2>
+  <p style="text-align:center;color:#444;">Estimate your monthly payment instantly — then apply below to get your exact quote from Trusted Statewide.</p>
+  <form id="mortgageCalc" style="text-align:center;margin-top:1rem;">
+    <input type="number" id="loanAmount" placeholder="Loan Amount ($)" required style="margin:5px;padding:10px;width:80%;max-width:300px;">
+    <input type="number" id="interestRate" placeholder="Interest Rate (%)" step="0.01" required style="margin:5px;padding:10px;width:80%;max-width:300px;">
+    <input type="number" id="loanTerm" placeholder="Loan Term (Years)" required style="margin:5px;padding:10px;width:80%;max-width:300px;">
+    <button type="button" onclick="calculatePayment()" style="background:#004aad;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">Calculate</button>
+  </form>
+  <p id="result" style="font-size:1.1rem;color:#222;text-align:center;margin-top:1rem;"></p>
+  <script>
+    function calculatePayment() {
+      const P = parseFloat(document.getElementById('loanAmount').value);
+      const r = parseFloat(document.getElementById('interestRate').value) / 100 / 12;
+      const n = parseFloat(document.getElementById('loanTerm').value) * 12;
+      if (!P || !r || !n) { 
+        document.getElementById('result').innerText = "Please fill in all fields.";
+        return; 
+      }
+      const payment = (P * r) / (1 - Math.pow(1 + r, -n));
+      document.getElementById('result').innerText = "Estimated Monthly Payment: $" + payment.toFixed(2);
+    }
+  </script>
+</section>
+    <section style="text-align:center;margin-top:2rem;">
+  <a href="/apply.html" class="button" style="background:#004aad;color:white;padding:1rem 2rem;border-radius:5px;text-decoration:none;font-weight:600;">Get Your Verified Pre-Approval</a>
+  <p style="font-size:0.9rem;color:#555;margin-top:0.5rem;">Receive your personalized rate quote after document review — safe, secure, and fast.</p>
+</section>
   </footer>
-
   <!-- Placeholder for future chat widget (Tidio, etc.) -->
 </body>
 </html>
