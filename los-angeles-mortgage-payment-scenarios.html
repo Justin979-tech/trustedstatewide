@@ -4,113 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Los Angeles Mortgage Payment Scenarios | Trusted Statewide</title>
-  <!-- Keep these links exactly as in your template -->
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="/assets/js/main.js" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <!-- HEADER (site navigation) -->
+  <!-- HEADER -->
   <header>
-    <nav>
-      <a href="/index.html" class="logo">Trusted Statewide</a>
-      <ul class="main-nav">
-        <li><a href="/los-angeles.html">Los Angeles</a></li>
-        <li><a href="/san-diego.html">San Diego</a></li>
-        <li><a href="/california-mortgage-comparison.html">All Programs</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <a href="index.html" class="logo">Trusted Statewide</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="los-angeles.html">Los Angeles</a></li>
+          <li><a href="san-diego.html">San Diego</a></li>
+          <li><a href="california-mortgage-comparison.html">All Programs</a></li>
+          <li><a href="apply.html" class="btn btn-primary">Apply Now</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- MAIN CONTENT -->
   <main>
-   <main>
-  <!-- HERO REFERENCE -->
-  <section class="comparison-hero">
-    <h2>Los Angeles Mortgage Payment Scenarios</h2>
-    <p>
-      Explore realistic mortgage payment examples for Los Angeles homebuyers.
-      Understand how loan type, down payment, and home price affect monthly payments.
-    </p>
-  </section>
+    <!-- HERO SECTION -->
+    <section class="hero hero-la">
+      <div class="container">
+        <h1>Compare Los Angeles Mortgage Payment Scenarios</h1>
+        <p>See your estimated monthly payments for conventional, FHA, VA, jumbo, and reverse mortgages. Start a secure online application today.</p>
+        <a href="apply.html" class="btn btn-primary">Start Secure Application</a>
+      </div>
+    </section>
 
-  <!-- COMPARISON TABLE -->
-  <section class="comparison-table">
-    <h3>Example Mortgage Payment Comparisons</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Loan Type</th>
-          <th>Home Price</th>
-          <th>Down Payment</th>
-          <th>Estimated Monthly Payment*</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Conventional</td>
-          <td>$900,000</td>
-          <td>20%</td>
-          <td>$4,800 – $5,300</td>
-        </tr>
-        <tr>
-          <td>Jumbo</td>
-          <td>$1,400,000</td>
-          <td>20%</td>
-          <td>$7,400 – $8,100</td>
-        </tr>
-        <tr>
-          <td>FHA</td>
-          <td>$750,000</td>
-          <td>3.5%</td>
-          <td>$4,900 – $5,400</td>
-        </tr>
-        <tr>
-          <td>VA</td>
-          <td>$850,000</td>
-          <td>0%</td>
-          <td>$4,600 – $5,100</td>
-        </tr>
-        <tr>
-          <td>Investor (DSCR)</td>
-          <td>$1,100,000</td>
-          <td>25%</td>
-          <td>$6,800 – $7,500</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+    <!-- PAYMENT TABLES SECTION -->
+    <section class="payment-scenarios container">
+      <h2>Los Angeles Mortgage Payment Examples</h2>
+      <p>Subject to change. Borrower qualification required. Rates are illustrative.</p>
+      <table class="payment-table">
+        <thead>
+          <tr>
+            <th>Loan Type</th>
+            <th>Loan Amount</th>
+            <th>Estimated Rate</th>
+            <th>Monthly Payment</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Conventional 30-Year</td>
+            <td>$750,000</td>
+            <td>6.25%</td>
+            <td>$4,600</td>
+            <td><a href="apply.html" class="btn btn-secondary">Apply</a></td>
+          </tr>
+          <tr>
+            <td>FHA 30-Year</td>
+            <td>$750,000</td>
+            <td>5.75%</td>
+            <td>$4,350</td>
+            <td><a href="apply.html" class="btn btn-secondary">Apply</a></td>
+          </tr>
+          <tr>
+            <td>VA 30-Year</td>
+            <td>$750,000</td>
+            <td>5.5%</td>
+            <td>$4,250</td>
+            <td><a href="apply.html" class="btn btn-secondary">Apply</a></td>
+          </tr>
+          <tr>
+            <td>Jumbo 30-Year</td>
+            <td>$1,200,000</td>
+            <td>6.5%</td>
+            <td>$7,600</td>
+            <td><a href="apply.html" class="btn btn-secondary">Apply</a></td>
+          </tr>
+          <tr>
+            <td>Reverse Mortgage</td>
+            <td>$500,000</td>
+            <td>5.75%</td>
+            <td>$3,250</td>
+            <td><a href="apply.html" class="btn btn-secondary">Apply</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-  <!-- DISCLAIMER -->
-  <section class="comparison-disclaimer">
-    <p>
-      *Payment scenarios are estimates for educational purposes only. Rates, terms, taxes, insurance,
-      and availability are subject to change. Final loan approval depends on borrower qualifications,
-      property type, and underwriting guidelines. This is not a loan commitment.
-    </p>
-  </section>
+    <!-- CTA SECTION -->
+    <section class="cta container">
+      <h2>Get Your Personalized Los Angeles Mortgage Quote</h2>
+      <p>Complete a quick, secure application online and see your estimated payments instantly.</p>
+      <a href="apply.html" class="btn btn-primary">Start Secure Application</a>
+    </section>
 
-  <!-- CALL TO ACTION -->
-  <section class="comparison-cta">
-    <h3>See Your Actual Los Angeles Mortgage Options</h3>
-    <p>
-      Get a personalized payment breakdown based on your income and property. Secure application takes just a few minutes.
-    </p>
-    <a href="/apply.html" class="cta-button">Start Secure Application</a>
-  </section>
-</main>
+    <!-- DISCLAIMER -->
+    <section class="disclaimer container">
+      <p>Disclaimer: Rates and payments are illustrative. Final loan terms may vary based on borrower qualifications, credit history, and loan program. Subject to change without notice.</p>
     </section>
   </main>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Trusted Statewide. All rights reserved.</p>
-    <nav>
-      <a href="/index.html">Home</a> |
-      <a href="/los-angeles.html">Los Angeles</a> |
-      <a href="/san-diego.html">San Diego</a> |
-      <a href="/california-mortgage-comparison.html">Loan Programs</a>
-    </nav>
+    <div class="container footer-container">
+      <p>&copy; 2025 Trusted Statewide. All Rights Reserved.</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="california-mortgage-comparison.html">All Programs</a></li>
+          <li><a href="apply.html">Apply Now</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>
-
