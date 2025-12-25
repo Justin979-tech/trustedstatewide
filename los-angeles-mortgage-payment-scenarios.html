@@ -4,45 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Los Angeles Mortgage Payment Scenarios | Trusted Statewide</title>
-  <!-- Correct paths to CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Correct paths to JS -->
-  <script src="assets/js/main.js" defer></script>
+  <!-- Absolute path ensures Netlify loads the CSS correctly -->
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <!-- Header / Navigation -->
-  <header class="site-header">
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="los-angeles.html">Los Angeles</a>
-      <a href="san-diego.html">San Diego</a>
-      <a href="california-mortgage-comparison.html">Mortgage Programs</a>
-    </nav>
-  </header>
-
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>Los Angeles Mortgage Payment Scenarios</h1>
-      <p>Compare payment options for your next home loan in Los Angeles. Get instant insights and start a secure application today.</p>
-      <a href="apply.html" class="btn-primary">Start Secure Application</a>
+    <div class="container">
+      <h1>Compare Los Angeles Mortgage Payment Scenarios</h1>
+      <p>See your estimated monthly payments for different loan programs. Start your secure application instantly.</p>
+      <a href="/apply.html" class="btn-primary">Start Secure Application</a>
     </div>
   </section>
 
-  <!-- Mortgage Payment Table -->
-  <main>
-    <section class="mortgage-payments">
-      <h2>Example Mortgage Payment Options</h2>
-      <p>These examples are for illustration purposes. Actual rates and terms depend on your personal scenario and credit qualifications.</p>
-
-      <table class="payment-table">
+  <!-- Payment Scenarios Table -->
+  <section class="payment-scenarios">
+    <div class="container">
+      <h2>Los Angeles Mortgage Payment Examples</h2>
+      <table class="payments">
         <thead>
           <tr>
-            <th>Loan Type</th>
+            <th>Loan Program</th>
             <th>Loan Amount</th>
-            <th>Rate</th>
-            <th>Term</th>
-            <th>Estimated Payment</th>
+            <th>Interest Rate</th>
+            <th>Estimated Monthly Payment</th>
           </tr>
         </thead>
         <tbody>
@@ -50,47 +35,58 @@
             <td>Conventional</td>
             <td>$750,000</td>
             <td>6.25%</td>
-            <td>30 yrs</td>
             <td>$4,600</td>
+          </tr>
+          <tr>
+            <td>FHA</td>
+            <td>$750,000</td>
+            <td>5.75%</td>
+            <td>$4,400</td>
           </tr>
           <tr>
             <td>Jumbo</td>
             <td>$1,200,000</td>
-            <td>6.45%</td>
-            <td>30 yrs</td>
-            <td>$7,500</td>
+            <td>6.50%</td>
+            <td>$7,700</td>
           </tr>
           <tr>
-            <td>FHA</td>
-            <td>$650,000</td>
-            <td>6.10%</td>
-            <td>30 yrs</td>
-            <td>$4,000</td>
-          </tr>
-          <tr>
-            <td>VA</td>
+            <td>Reverse</td>
             <td>$800,000</td>
-            <td>6.15%</td>
-            <td>30 yrs</td>
-            <td>$4,900</td>
+            <td>5.95%</td>
+            <td>$0 (No monthly payment)</td>
           </tr>
         </tbody>
       </table>
+      <p class="disclaimer">*Payments are estimates. Subject to change based on borrower qualification, rates, and terms.</p>
+      <a href="/apply.html" class="btn-secondary">See Your Actual Payment Options</a>
+    </div>
+  </section>
 
-      <p class="disclaimer">*Subject to change. Borrower qualifications apply. Rates may vary based on credit score, property type, and loan program.</p>
-
-      <a href="apply.html" class="btn-secondary">See Your Actual Payment Options</a>
-    </section>
-  </main>
+  <!-- Optional SEO / Internal Linking Section -->
+  <section class="city-links">
+    <div class="container">
+      <p>Explore mortgage options in other California cities:</p>
+      <ul>
+        <li><a href="/san-diego-mortgage-payment-scenarios.html">San Diego</a></li>
+        <li><a href="/sacramento-mortgage-payment-scenarios.html">Sacramento</a></li>
+        <li><a href="/carlsbad-mortgage-payment-scenarios.html">Carlsbad</a></li>
+      </ul>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Trusted Statewide. All rights reserved.</p>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="los-angeles.html">Los Angeles</a> |
-      <a href="san-diego.html">San Diego</a>
-    </nav>
+    <div class="container">
+      <p>&copy; Trusted Statewide 2025. All rights reserved.</p>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/apply.html">Apply Now</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
   </footer>
+
+  <!-- Absolute path ensures Netlify loads the JS correctly -->
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
