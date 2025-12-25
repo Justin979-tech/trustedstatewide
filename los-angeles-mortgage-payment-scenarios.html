@@ -1,72 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Los Angeles Mortgage Payment Scenarios | Trusted Statewide</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <script src="/assets/js/main.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Los Angeles Mortgage Payment Scenarios | Trusted Statewide</title>
+
+<!-- Inline CSS -->
+<style>
+  body { margin:0; font-family: Arial, sans-serif; background:#f9f9f9; color:#333; }
+  .hero { background: url('https://trustedstatewide.netlify.app/assets/images/la-hero.jpg') center/cover no-repeat; height:300px; display:flex; align-items:center; justify-content:center; color:#fff; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);}
+  .hero h1 { font-size: 2.5rem; }
+  .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+  h2 { color: #0056b3; margin-bottom: 20px; }
+  table { width:100%; border-collapse: collapse; margin-bottom:30px; }
+  th, td { border:1px solid #ddd; padding:12px; text-align:center; }
+  th { background-color:#0056b3; color:#fff; }
+  .btn { display:inline-block; background-color:#0056b3; color:#fff; padding:12px 24px; text-decoration:none; border-radius:5px; margin-top:20px;}
+  .btn:hover { background-color:#003f7f; }
+  .disclaimer { font-size:0.85rem; color:#555; margin-top:10px; }
+</style>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Compare Los Angeles Mortgage Payment Scenarios</h1>
-      <p>See how your mortgage payment may look based on different loan options and rates.</p>
-      <a href="/apply.html" class="btn-primary">Start a Secure Application</a>
-    </div>
-  </section>
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Los Angeles Mortgage Payment Scenarios</h1>
+</section>
 
-  <!-- Payment Scenarios Table -->
-  <section class="payment-scenarios">
-    <h2>Mortgage Payment Examples</h2>
-    <p>All scenarios are illustrative. Actual rates may vary based on qualifications.</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Loan Type</th>
-          <th>Loan Amount</th>
-          <th>Interest Rate</th>
-          <th>Monthly Payment</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Conventional 30-Year Fixed</td>
-          <td>$750,000</td>
-          <td>6.25%</td>
-          <td>$4,600</td>
-        </tr>
-        <tr>
-          <td>Jumbo 30-Year Fixed</td>
-          <td>$1,250,000</td>
-          <td>6.50%</td>
-          <td>$7,900</td>
-        </tr>
-        <tr>
-          <td>FHA 30-Year Fixed</td>
-          <td>$750,000</td>
-          <td>6.00%</td>
-          <td>$4,500</td>
-        </tr>
-        <tr>
-          <td>VA 30-Year Fixed</td>
-          <td>$750,000</td>
-          <td>6.125%</td>
-          <td>$4,550</td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="disclaimer">*Payment estimates include principal and interest only. Subject to change based on borrower's qualifications and prevailing rates.</p>
-  </section>
+<!-- Main Content -->
+<div class="container">
+  <h2>Explore Your Payment Options</h2>
+  <p>Use these example scenarios to see what your mortgage payments could look like. Actual rates, terms, and qualification may vary.</p>
 
-  <!-- Call to Action -->
-  <section class="cta">
-    <h2>See Your Personalized Payment Options</h2>
-    <p>Start a secure online application today and get your customized mortgage payment estimate.</p>
-    <a href="/apply.html" class="btn-primary">Start Your Application</a>
-  </section>
+  <table>
+    <thead>
+      <tr>
+        <th>Loan Type</th>
+        <th>Loan Amount</th>
+        <th>Term</th>
+        <th>Interest Rate</th>
+        <th>Estimated Payment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Conventional</td>
+        <td>$750,000</td>
+        <td>30 yr fixed</td>
+        <td>6.25%</td>
+        <td>$4,600</td>
+      </tr>
+      <tr>
+        <td>Jumbo</td>
+        <td>$1,200,000</td>
+        <td>30 yr fixed</td>
+        <td>6.5%</td>
+        <td>$7,600</td>
+      </tr>
+      <tr>
+        <td>FHA</td>
+        <td>$650,000</td>
+        <td>30 yr fixed</td>
+        <td>6.0%</td>
+        <td>$3,900</td>
+      </tr>
+      <tr>
+        <td>VA</td>
+        <td>$800,000</td>
+        <td>30 yr fixed</td>
+        <td>6.0%</td>
+        <td>$4,900</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="https://trustedstatewide.netlify.app/apply.html" class="btn">Start Your Secure Application</a>
+
+  <p class="disclaimer">*Rates are examples only. Actual rates, payments, and eligibility may vary. Subject to borrower qualification.</p>
+</div>
+
+<!-- Inline JS for Future Features (Optional) -->
+<script>
+  // Example: simple alert for button click (optional)
+  document.querySelector('.btn').addEventListener('click', function(e){
+    console.log('User clicked Start Application');
+  });
+</script>
 
 </body>
 </html>
