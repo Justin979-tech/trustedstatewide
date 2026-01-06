@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Document Upload | Trusted Statewide</title>
+  <meta name="description" content="Upload your mortgage documents securely to Trusted Statewide. Fast, safe, and easy.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Secure Document Upload</h1>
+      <p>Upload your mortgage documents safely. Justin Olson will review and match them with your application.</p>
+    </div>
+  </header>
+
+  <main class="container content">
+    <section>
+      <form action="https://formspree.io/f/xrblbvvn" method="POST" enctype="multipart/form-data">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="documents">Select documents to upload:</label>
+        <input type="file" id="documents" name="documents" multiple required>
+
+        <button type="submit">Upload Documents Securely</button>
+      </form>
+    </section>
+
+    <section class="cta">
+      <p>After uploading, you can continue your <a href="secure-application.html">Secure Application</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Trusted Statewide. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
